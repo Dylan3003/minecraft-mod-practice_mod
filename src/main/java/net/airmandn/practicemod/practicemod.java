@@ -1,6 +1,7 @@
 package net.airmandn.practicemod;
 
 import com.mojang.logging.LogUtils;
+import net.airmandn.practicemod.block.ModBlocks;
 import net.airmandn.practicemod.item.ModItems;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -23,6 +24,7 @@ public class practicemod
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

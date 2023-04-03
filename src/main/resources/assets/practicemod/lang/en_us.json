@@ -3,5 +3,8 @@
   "item.practicemod.raw_pizza": "Raw Pizza",
   "item.practicemod.dark_orb": "Dark Orb",
 
+  "block.practicemod.dark_block": "Block of Dark Orbs",
+  "block.practicemod.dark_ore": "Dark Ore",
+
   "itemGroup.practicetab": "Practice Mod"
 }
