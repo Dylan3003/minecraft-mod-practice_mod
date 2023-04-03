@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "dark_orb",
+  "ingredient": {
+    "block": "practicemod:dark_ore"
+  },
+  "result": "practicemod:dark_orb"
+}

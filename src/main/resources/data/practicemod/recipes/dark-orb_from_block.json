@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "practicemod:dark_block"
+    }
+  ],
+  "result": {
+    "item": "practicemod:dark_orb",
+    "count": 9
+  }
+}
