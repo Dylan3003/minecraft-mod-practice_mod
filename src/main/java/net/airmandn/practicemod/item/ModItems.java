@@ -12,10 +12,10 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, practicemod.MOD_ID);
 
-    public static final RegistryObject<Item> PIZZA = ITEMS.register("pizza",
+    public static final RegistryObject<Item> DARK_INGOT = ITEMS.register("dark_ingot",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.PRACTICE_TAB)));
 
-    public static final RegistryObject<Item> RAW_PIZZA = ITEMS.register("raw_pizza",
+    public static final RegistryObject<Item> RAW_DARK_ORE = ITEMS.register("raw_dark_ore",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.PRACTICE_TAB)));
 
     public static final RegistryObject<Item> DARK_ORB = ITEMS.register("dark_orb",

@@ -1,5 +1,6 @@
 package net.airmandn.practicemod.block;
 
+import net.airmandn.practicemod.block.custom.WitherBlock;
 import net.airmandn.practicemod.item.ModCreativeModeTab;
 import net.airmandn.practicemod.item.ModItems;
 import net.airmandn.practicemod.practicemod;
@@ -30,6 +31,10 @@ public class ModBlocks {
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6f).requiresCorrectToolForDrops(),
                     UniformInt.of(3, 7)), ModCreativeModeTab.PRACTICE_TAB);
+
+    public static final RegistryObject<Block> WITHER_BLOCK = registerBlock("wither_block",
+            () -> new WitherBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.PRACTICE_TAB);
 
 
     private static  <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {

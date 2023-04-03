@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "practicemod:item/raw_pizza"
+    "layer0": "practicemod:item/raw_dark_ore"
   }
 }
