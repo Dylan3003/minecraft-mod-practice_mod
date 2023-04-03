@@ -1,5 +1,6 @@
 package net.airmandn.practicemod.item;
 
+import net.airmandn.practicemod.item.custom.EightBallItem;
 import net.airmandn.practicemod.practicemod;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -13,10 +14,15 @@ public class ModItems {
 
     public static final RegistryObject<Item> PIZZA = ITEMS.register("pizza",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.PRACTICE_TAB)));
+
     public static final RegistryObject<Item> RAW_PIZZA = ITEMS.register("raw_pizza",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.PRACTICE_TAB)));
+
     public static final RegistryObject<Item> DARK_ORB = ITEMS.register("dark_orb",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.PRACTICE_TAB)));
+
+    public static final RegistryObject<Item> EIGHT_BALL = ITEMS.register("eight_ball",
+            () -> new EightBallItem(new Item.Properties().tab(ModCreativeModeTab.PRACTICE_TAB).stacksTo(1)));
 
 
     public static void register(IEventBus eventBus) {
