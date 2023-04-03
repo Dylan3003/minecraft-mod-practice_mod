@@ -15,6 +15,8 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.PRACTICE_TAB)));
     public static final RegistryObject<Item> RAW_PIZZA = ITEMS.register("raw_pizza",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.PRACTICE_TAB)));
+    public static final RegistryObject<Item> DARK_ORB = ITEMS.register("dark_orb",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.PRACTICE_TAB)));
 
 
     public static void register(IEventBus eventBus) {

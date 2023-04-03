@@ -8,7 +8,7 @@ public class ModCreativeModeTab {
     public static final CreativeModeTab PRACTICE_TAB = new CreativeModeTab("practicetab") {
         @Override
         public ItemStack makeIcon() {
-            return new ItemStack(ModItems.PIZZA.get());
+            return new ItemStack(ModItems.DARK_ORB.get());
         }
     };
 }
