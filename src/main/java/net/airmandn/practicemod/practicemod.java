@@ -4,6 +4,8 @@ import com.mojang.logging.LogUtils;
 import net.airmandn.practicemod.block.ModBlocks;
 import net.airmandn.practicemod.item.ModItems;
 import net.airmandn.practicemod.painting.ModPaintings;
+import net.airmandn.practicemod.world.feature.ModConfiguredFeatures;
+import net.airmandn.practicemod.world.feature.ModPlacedFeatures;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -28,6 +30,9 @@ public class practicemod
         ModBlocks.register(modEventBus);
 
         ModPaintings.register(modEventBus);
+
+        ModConfiguredFeatures.register(modEventBus);
+        ModPlacedFeatures.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
