@@ -3,6 +3,7 @@ package net.airmandn.practicemod;
 import com.mojang.logging.LogUtils;
 import net.airmandn.practicemod.block.ModBlocks;
 import net.airmandn.practicemod.item.ModItems;
+import net.airmandn.practicemod.painting.ModPaintings;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -25,6 +26,8 @@ public class practicemod
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
+        ModPaintings.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
