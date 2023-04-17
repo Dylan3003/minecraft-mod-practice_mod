@@ -8,5 +8,6 @@
   "block.practicemod.dark_ore": "Dark Ore",
   "block.practicemod.wither_block": "Wither Block",
 
-  "itemGroup.practicetab": "Practice Mod"
+  "itemGroup.practicetab": "Practice Mod",
+  "entity.minecraft.villager.practicemod.wither_master": "Wither Master"
 }

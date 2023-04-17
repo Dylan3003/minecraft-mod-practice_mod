@@ -3,7 +3,9 @@ package net.airmandn.practicemod;
 import com.mojang.logging.LogUtils;
 import net.airmandn.practicemod.block.ModBlocks;
 import net.airmandn.practicemod.item.ModItems;
+import net.airmandn.practicemod.networking.ModMessages;
 import net.airmandn.practicemod.painting.ModPaintings;
+import net.airmandn.practicemod.villager.ModVillagers;
 import net.airmandn.practicemod.world.feature.ModConfiguredFeatures;
 import net.airmandn.practicemod.world.feature.ModPlacedFeatures;
 import net.minecraftforge.common.MinecraftForge;
@@ -31,6 +33,8 @@ public class practicemod
 
         ModPaintings.register(modEventBus);
 
+        ModVillagers.register(modEventBus);
+
         ModConfiguredFeatures.register(modEventBus);
         ModPlacedFeatures.register(modEventBus);
 
@@ -39,9 +43,11 @@ public class practicemod
         MinecraftForge.EVENT_BUS.register(this);
     }
 
-    private void commonSetup(final FMLCommonSetupEvent event)
-    {
-
+    private void commonSetup(final FMLCommonSetupEvent event) {
+        event.enqueueWork(() -> {
+            ModMessages.register();
+            ModVillagers.registerPOIs();
+        });
     }
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
