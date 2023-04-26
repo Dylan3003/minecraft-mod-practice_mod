@@ -1,8 +1,10 @@
 package net.airmandn.practicemod.item;
 
+import net.airmandn.practicemod.entity.ModEntityTypes;
 import net.airmandn.practicemod.item.custom.EightBallItem;
 import net.airmandn.practicemod.practicemod;
 import net.minecraft.world.item.Item;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -24,6 +26,9 @@ public class ModItems {
     public static final RegistryObject<Item> EIGHT_BALL = ITEMS.register("eight_ball",
             () -> new EightBallItem(new Item.Properties().tab(ModCreativeModeTab.PRACTICE_TAB).stacksTo(1)));
 
+    public static final RegistryObject<Item> WANDERER_SPAWN_EGG = ITEMS.register("wanderer_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntityTypes.WANDERER, 0x22b341, 0x19732e,
+                    new Item.Properties().tab(ModCreativeModeTab.PRACTICE_TAB)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
